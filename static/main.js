@@ -75,34 +75,34 @@ function HovyLeeHeader() {
     });
 
     // When Window On Scroll
-    $( window ).on( 'scroll', function(){
-        let scrollTop = $( this ).scrollTop();
+    // $( window ).on( 'scroll', function(){
+    //     let scrollTop = $( this ).scrollTop();
 
-        if( scrollTop > 85 ) {
-            logoTransparent.hide();
-            logoNormal.show();
-            header.addClass( 'header-shrink' );
-            scrollTopBtn.addClass( 'active' );
-        }else {
-            logoTransparent.show();
-            logoNormal.hide();
-            header.removeClass( 'header-shrink' );
-            scrollTopBtn.removeClass( 'active' );
-        }
-    });
+    //     if( scrollTop > 85 ) {
+    //         logoTransparent.hide();
+    //         logoNormal.show();
+    //         header.addClass( 'header-shrink' );
+    //         scrollTopBtn.addClass( 'active' );
+    //     }else {
+    //         logoTransparent.show();
+    //         logoNormal.hide();
+    //         header.removeClass( 'header-shrink' );
+    //         scrollTopBtn.removeClass( 'active' );
+    //     }
+    // });
 
     // The same process is done without page scroll to prevent errors.
-    if( scrollTop > 85 ) {
-        logoTransparent.hide();
-        logoNormal.show();
-        header.addClass( 'header-shrink' );
-        scrollTopBtn.addClass( 'active' );
-    }else {
-        logoTransparent.show();
-        logoNormal.hide();
-        header.removeClass( 'header-shrink' );
-        scrollTopBtn.removeClass( 'active' );
-    }
+    // if( scrollTop > 85 ) {
+    //     logoTransparent.hide();
+    //     logoNormal.show();
+    //     header.addClass( 'header-shrink' );
+    //     scrollTopBtn.addClass( 'active' );
+    // }else {
+    //     logoTransparent.show();
+    //     logoNormal.hide();
+    //     header.removeClass( 'header-shrink' );
+    //     scrollTopBtn.removeClass( 'active' );
+    // }
 
     // Window On Resize Hover Dropdown
     $( window ).on( 'resize', function() {
